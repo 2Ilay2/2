@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Comic_Relift";
+    src: url(Comic_Relief/ComicRelief-Regular.ttf);
+}
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 5;}
+main{padding: 20px;}
+body{
+    font-family: 'Comic_Relift', sans-serif;
+    font-weight: 600;
+    background-color: purple;
+    color: orange;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    background-color: darkorchid;
+    flex-wrap: wrap;
+}
+.header-nav button{
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+.header-nav a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: darkorchid;
+    margin: 20px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.about-text{
+    flex: 300px;
+}
+.about-photo{
+    text-align: center;
+}
+.about-photo img{
+    border-radius: 15px;
+}
+
+.goals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: o 20px 20px;
+    flex-wrap: wrap;
+}
+.goals-me{
+    flex: 250px;
+    background-color: darkorchid;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.links{
+    padding: 15px;
+}
+.links-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.links-row a{
+    background-color: darkorchid;
+    color: orange;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.table{
+    margin: 20px;
+    background-color: darkorchid;
+    border-color: orangered;
+    caption{background-color: darkorchid;}
+}
+
+.playlist{
+    padding: 15px;
+}
+.playlist-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.track{
+    flex: 200px;
+    background-color: darkorchid;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.track img{
+    border-radius: 10px;
+}
+.track audio{
+    width: 90%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: darkorchid;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.footer-blok{
+    flex: 200px;
+}

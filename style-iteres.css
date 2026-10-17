@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Comic_Relift";
+    src: url(Comic_Relief/ComicRelief-Regular.ttf);
+}
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 5;
+}
+body{
+    font-family: 'Comic_Relift', sans-serif;
+    font-weight: 600;
+    background-color: purple;
+    color: orange;
+}
+main{padding: 20px;}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    background-color: darkorchid;
+    flex-wrap: wrap;
+}
+.header-nav button{
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+.header-nav a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.me-interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: darkorchid;
+    flex-wrap: wrap;
+}
+
+.interes-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    h2{padding: 10px;}
+    p{padding: 5px;}
+}
+.interes{
+    flex: 250px;
+    background-color: darkorchid;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    img{border-radius: 15px;}
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    p{padding: 5px;}
+}
+.foto{
+    flex: 250px;
+    background-color: darkorchid;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    img{border-radius: 25px;}
+}
+.fact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    background-color: darkorchid;
+    margin: 20px;
+    border-radius: 15px;
+    h2{padding: 10px;}
+}
+.fact-about{
+    max-width: 450px;
+    img{border-radius: 25px;}
+}
+.fact-game{
+    flex-wrap: wrap;
+    padding-top: 45px;
+    font-size: 24px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: darkorchid;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.footer-blok{
+    flex: 200px;
+}

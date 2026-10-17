@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <style>
+      @font-face {
+        font-family: "Comic_Relift";
+        src: url(Comic_Relief/ComicRelief-Regular.ttf);
+      }
+      *{box-sizing: border-box;
+        margin: 0;
+      }
+      main{padding: 20px;}
+      body{
+        font-family: 'Comic_Relift', sans-serif;
+        font-weight: 600;
+        background-color: purple;
+        color: orange;
+      }
+      .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 0 20px 0;
+        background-color: darkorchid;
+        flex-wrap: wrap;
+      }
+      .header-nav button{
+        background-color: purple;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+      }
+      .header-nav a{
+        color: orange;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      main{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+      textarea{
+        min-width: 180px;
+        max-width: 500px;
+        max-height: 300px;
+        min-height: 100px;
+      }
+      h1{padding: 5px;}
+      .login, .regis{
+        background-color: darkorchid;
+        border: 12px;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 32px;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+
+  <header class="header">
+      <div>Никитин И.А.</div>
+      <nav class="header-nav">
+        <button><a href="index.html">Обо мне</a></button>
+        <button><a href="form.html">Авторизация</a></button>
+        <button><a href="interes.html">Интересы</a></button>
+        <button><a href="#login">Вход</a></button>
+      </nav>
+    </header>
+
+    <main>
+        <form action="" method="post" class="login">
+          <h2 id="login">Вход</h2>
+          <label for="email">Email
+          <br><input type="email" id="log-email" placeholder="email@.com"  required></label>
+          <label for="password">Пароль
+          <br><input type="password" id="log-password" required></label>
+          <label><button type="submit">Войти</button></label>
+        </form>
+
+       <form action="" method="post" class="regis">
+          <h2>Регистрация</h2>
+          <label for="name">Имя пользователя
+          <br><input type="text" id="name" maxlength="30" pattern="^[a-zA-Z]+$" required></label>
+          <label for="email">Email
+          <br><input type="email"  id="reg-email" placeholder="email@.com" required></label>
+          <label for="password">Пароль
+          <br><input type="password" id="reg-password" required></label>
+          <label for="message">Про себя</label>
+          <textarea id="message" maxlength="300" placeholder="Рассказать о себе"></textarea>
+          <label for="age">Возраст
+          <select id="age">
+           <option>14</option>
+           <option>18</option>
+           <option>25+</option>
+          </select></label>
+          <label><button type="submit">Отправить</button></label>
+       </form>
+    </main>
+</html>
