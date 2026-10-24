@@ -6,15 +6,17 @@
     margin: 0;
     padding: 5;
 }
+main{padding: 20px;}
 body{
     font-family: 'Comic_Relift', sans-serif;
     font-weight: 600;
     background-color: purple;
     color: orange;
 }
-main{padding: 20px;}
+
 .header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +24,7 @@ main{padding: 20px;}
     padding: 20px;
     margin: 0 0 20px 0;
     background-color: darkorchid;
-    flex-wrap: wrap;
+    
 }
 .header-nav button{
     background-color: purple;
