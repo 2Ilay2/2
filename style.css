@@ -11,6 +11,7 @@ body{
     font-weight: 600;
     background-color: purple;
     color: orange;
+    h1, h2, h3{padding-bottom: 10px;}
 }
 
 .header{
@@ -98,6 +99,7 @@ body{
     margin: 20px;
     background-color: darkorchid;
     border-color: orangered;
+    border-radius: 10px;
     caption{background-color: darkorchid;}
 }
 
@@ -117,11 +119,10 @@ body{
     background-color: darkorchid;
     margin: 15px;
     border-radius: 10px;
-    gap: 10px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    h2, p{padding: 10px;}
+    p{padding-bottom: 10px;}
 }
 .track img{
     border-radius: 10px;
@@ -154,51 +155,60 @@ body{
 .footer-blok{
     flex: 200px;
 }
-@media(max-width: 760px){
+@media(max-width: 768px){
     body {
     font-size: 18px;}
-    h1, h2, h3{font-size: 20px;}
+    h1, h2, h3{font-size: 20px;
+    padding-bottom: 10px;}
+    img {width: 300px; height: 250px;}
     
     .header{flex-direction: column;
         gap: 5px;
         margin-bottom: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        padding: 5px;
+        padding: 10px;
         align-items: stretch;}
     .header-nav{flex-direction: column;
-    gap: 7px;}
-    .header-nav button{padding: 5px;
+    gap: 8px;}
+    .header-nav button{padding: 8px;
     font-size: 20px;}
 
-    .about{gap: 5px;
+    .about{gap: 8px;
         margin: 10px;
-        padding: 5px;}
-    img {width: 250px; height: 250px;}
+        padding: 10px;}
     
     .goals-me{margin: 10px;
-    padding: 5px;}
+    padding: 10px;}
 
     .links{margin: 10px;}
     .links-row{flex-direction: column;
-     gap: 7px;}
-    .links-row a{padding: 5px;
+     gap: 8px;}
+    .links-row a{padding: 10px;
     justify-content: space-between;}
 
-    .table{margin: 5px;}
+    .table{margin: 10px;}
 
     .playlist{margin: 10px;}
-    .playlist-row{gap: 5px;}
+    .playlist-row{gap: 8px;}
     .track{margin: 0px;
-    h2, p{padding: 5px;}}
+    p{padding-bottom: 10px;}}
 
     .video{margin: 10px;
-    gap: 5px;
-    padding: 5px;}
-    video {width: 250px;}
+    gap: 8px;
+    padding: 10px;}
+    video {width: 280px;}
 
-    .footer{gap: 5px;
-    padding: 5px;
+    .footer{gap: 8px;
+    padding: 10px;
     margin-left: 10px;
     margin-right: 10px;}
+}
+@media(min-width: 370px) and (max-width:425px){
+    img {width: 355px; height: 300px;}
+    video {width: 330px;}
+}
+@media(min-width: 425px) and (max-width:768px){
+    img {width: 405px; height: 350px;}
+    video {width: 380px;}
 }
